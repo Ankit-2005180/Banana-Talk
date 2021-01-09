@@ -1,6 +1,18 @@
+
+// acessing elements by querySelector (Input Part)
+
+var txtInput = document.querySelector("#txt-input");
 var btnTranslate = document.querySelector("#btn-translate");
-btnTranslate.addEventListener("click", function clickEventHandler()
+var txtOutput = document.querySelector("#txt-output");
+
+// writing function (Processing part)
+
+function clickEventHandler() 
 {
-    console.log("button clicked !");
+    
+   txtOutput.innerText = txtInput.value; 
+
 }
-)
+
+//calling function (Output Part)
+btnTranslate.addEventListener("click" , clickEventHandler);
